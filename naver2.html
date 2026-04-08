@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        div.container {
+            width: 1080px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+        ul.gnb {
+            float: left;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: green;
+        }
+        ul.gnb > li {
+            list-style-type: none;
+            float: left;
+            padding-left: 16px;
+        }
+        ul.gnb > li:first-child {
+            padding-left: 0;
+        }
+        ul.rank {
+            float: right;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 0;
+            background: yellow;
+        }
+        ul.rank > li {
+            list-style-type: none;
+        }
+        div.left {
+            background-color: red;
+            float: left;
+            width: 740px; height: 428px;
+        }
+        div.right {
+            background-color: blue;
+            float: right;
+            width: 332px; height: 428px;
+        }
+        div.footer {
+            width: 1080px;
+            height: 80px;
+            background-color: yellow;
+            float: none;
+        }
+        div.container2 {
+            width: 1080px;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            overflow: visible;
+        }
+        div.container2 > div.left,
+        div.container2 > div.right {
+            float: none;
+        }
+        div.container:nth-of-type(3) {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background-color: yellow
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Logo</h1>
+        <ul class="gnb">
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>쇼핑</li>
+            <li>사전</li>
+            <li>뉴스</li>
+            <li>증권</li>
+            <li>부동산</li>
+            <li>지도</li>
+        </ul>
+        <ul class="rank">
+            <li>실시간 검색 순위</li>
+        </ul>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container2">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="footer"></div>
+    </div>
+    
+</body>
+</html>
