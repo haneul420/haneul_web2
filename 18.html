@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       let input = parseInt(prompt('네 자리 정수를 입력해주세요.'));  
+       let num_1000 = parseInt(input / 1000); 
+       let num_100 = parseInt(input % 1000 / 100);  
+       let num_10 = parseInt(input % 100 / 10);  
+       let num_1 = parseInt(input % 10); 
+       alert(num_1000 + '.' + num_100 + '.' + num_10 + '.' + num_1); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
